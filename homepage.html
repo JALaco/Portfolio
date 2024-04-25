@@ -1,4 +1,17 @@
-<h1><a href="index.html" style="color:rgb(151, 244, 231);">Resume&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="index.html" style="color:rgb(151, 244, 231);">Projects&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a><a href="index.html" style="color:rgb(151, 244, 231);">Mission Statement</a></h1>
+<style>
+    body {
+      font-family: 'Courier New', monospace;
+    }
+</style>
+
+<style>
+    .header {
+        color: #FFFFFF;
+        text-align: center;
+    }
+</style>
+
+<h1 class="header">Projects</h1>
 
 <style>
     .right {
@@ -52,6 +65,7 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#13529E', endColorstr='#084084');
         background: -webkit-gradient(linear, left top, left bottom, from(#13529E), to(#084084));
         background: -moz-linear-gradient(top, #13529E, #084084);
+        
     }
 
     #ovoMenu a.active:link, #ovoMenu a.active:visited, #ovoMenu a.active:active, #ovoMenu a.active:hover {
@@ -61,6 +75,7 @@
         background-color: #E9E9E9;
     }
 </style>
+
 <div id="ovoMenu">
     <a href="index.html" style="color:rgb(151, 244, 231);">Resume&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
     <a href="?i=Resume">Item 1</a>
@@ -83,6 +98,11 @@
     <head>
         <style>
             .grid-container {
+            -moz-border-radius-bottomleft: 4px;
+            border-bottom-left-radius: 4px;
+            -moz-border-radius-bottomright: 4px;
+            border-bottom-right-radius: 4px;
+
             display: grid;
             grid-template-columns: auto auto;
             background-color: #2196F3;
@@ -91,28 +111,66 @@
 
             .grid-item {
             background-color: rgba(255, 255, 255, 0.8);
-            border: 1px solid rgba(0, 0, 0, 0.8);
+            /* border: 10px solid rgba(0, 0, 0, 0.8); the border between the cells on the page */
+            border: 10px solid #2196F3;
+            border-radius: 25px;
             height: 350px;
             padding: 20px;
             font-size: 30px;
             text-align: center;
             }
+
+            .wrapper {
+            display: flex;
+            justify-content: space-around;
+            }
+            .box {
+            flex: 0 0 40%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 1px dashed red;
+            }
+            /* button {
+            margin-top: auto;
+            } */
         </style>
     </head>
 
     <body>
-        
+        <!-- <div class="wrapper">
+            <div class="box">
+              <img src="http://i.imgur.com/60PVLis.png" width="50" height="50" alt="">
+              <h2>Headline 1</h2>
+              <p>Description 1</p>
+              <button></button>
+            </div>
+            <div class="box">
+              <img src="http://i.imgur.com/60PVLis.png" width="50" height="50" alt="">
+              <h2>Headline 2</h2>
+              <p>Description 2
+                <br>with special line</p>
+              <button></button>
+            </div>
+        </div> -->
 
         <div class="grid-container">
-        <div class="grid-item">1</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">3</div>  
-        <div class="grid-item">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>  
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>  
+            <div class="grid-item">
+                <div class="box">
+                    <!-- <img src="http://i.imgur.com/60PVLis.png" width="10" height="10" alt=""> -->
+                    <img src="https://i.imgur.com/t/pics/U3edWm9.png" width="300" height="300" alt="">
+                    <!-- <p>Description 2
+                      <br>with special line</p> -->
+                </div>
+            </div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>  
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>  
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
         </div>
     </body>
 
