@@ -114,7 +114,7 @@
             /* border: 10px solid rgba(0, 0, 0, 0.8); the border between the cells on the page */
             border: 10px solid #2196F3;
             border-radius: 25px;
-            height: 350px;
+            height: 550px;
             padding: 20px;
             font-size: 30px;
             text-align: center;
@@ -130,8 +130,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: 1px dashed red;
+            /* border: 1px dashed red; */
             }
+            h2 {
+                margin-top: 0;
+                margin-bottom: 20;
+            }
+
+            
             /* button {
             margin-top: auto;
             } */
@@ -157,13 +163,22 @@
 
         <div class="grid-container">
             <div class="grid-item">
-                <div class="box">
-                    <img src="C:\Users\Justin\Pictures\Screenshots\cs280Portfolio\Cropped\TicTacToe.png" width="300" height="300" alt="">
-                </div>
+                <a style="text-decoration:none; color:rgb(0, 0, 0);" href="https://github.com/JALaco/BoardGameHolder">
+                    <div class="box">
+                        <!-- If I want just the header to be a hyper link I can use this: or if I want the entire
+                        box to be a hyperlink, I can just wrap the dive with class box in this style format -->
+                        <!-- <a style="text-decoration:none; color:rgb(0, 0, 0);" href="index.html"><h2>TicTacToe Game</h2></a> -->
+                        <h2>TicTacToe Game</h2>
+                        <img src="C:\Users\Justin\Pictures\Screenshots\cs280Portfolio\Cropped\TicTacToe.png" width="300" height="300" alt="">
+                        <p style="font-size: 16px; text-align: left;">This was made over the summer after my sophomore year to review Java and practice my coding skills. It is a simple Tic-Tac-Toe game where two players’ names are entered and starts with the first player clicking in the grid to place an “X”. It then switches to the second player’s turn and they place an “O”. The game continues until someone gets 3 X’s or O’x in a row, or the board is full. At the end of the game, the users are given the option to quit or restart.</p>
+                    </div>
+                </a>
             </div>
             <div class="grid-item">
                 <div class="box">
+                    <h2>Headline 2</h2>
                     <img src="C:\Users\Justin\Pictures\Screenshots\cs280Portfolio\Cropped\TicTacToe.png" width="300" height="300" alt="">
+                    <p style="font-size: 16px; text-align: left;">This was made over the summer after my sophomore year to review Java and practice my coding skills. It is a simple Tic-Tac-Toe game where two players’ names are entered and starts with the first player clicking in the grid to place an “X”. It then switches to the second player’s turn and they place an “O”. The game continues until someone gets 3 X’s or O’x in a row, or the board is full. At the end of the game, the users are given the option to quit or restart.</p>
                 </div>
             </div>
             <div class="grid-item">
