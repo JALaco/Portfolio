@@ -9,6 +9,7 @@
         color: #FFFFFF;
         text-align: center;
         margin-top: 20;
+        font-size: 60px
     }
 </style>
 
@@ -21,6 +22,10 @@
     }
 
     #ovoMenu {
+        -moz-border-radius-bottomleft: 4px;
+        border-bottom-left-radius: 4px;
+        -moz-border-radius-bottomright: 4px;
+        border-bottom-right-radius: 4px;
         margin: 0px;
         padding: 0px;
         /* Size properties */
@@ -62,6 +67,10 @@
 
     #ovoMenu a:hover {
         /* Other background */
+        -moz-border-radius-bottomleft: 4px;
+        border-bottom-left-radius: 4px;
+        -moz-border-radius-bottomright: 4px;
+        border-bottom-right-radius: 4px;
         background-color: #13529E;
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#13529E', endColorstr='#084084');
         background: -webkit-gradient(linear, left top, left bottom, from(#13529E), to(#084084));
@@ -90,7 +99,7 @@
 <!DOCTYPE html>
 <html>
     <style>
-        body {background-color: rgb(0, 0, 0);}
+        body {background-color: #2196F3;}
         h1   {color: rgb(0, 0, 0);}
         p    {color: rgb(0, 0, 0);}
         </style>
@@ -125,6 +134,7 @@
             display: flex;
             justify-content: space-around;
             }
+
             .box {
             flex: 0 0 40%;
             text-align: center;
@@ -133,15 +143,11 @@
             align-items: center;
             /* border: 1px dashed red; */
             }
+
             h2 {
                 margin-top: 0;
                 margin-bottom: 20;
             }
-
-            
-            /* button {
-            margin-top: auto;
-            } */
         </style>
     </head>
 
@@ -153,7 +159,7 @@
                     box to be a hyperlink, I can just wrap the dive with class box in this style format -->
                     <!-- <a style="text-decoration:none; color:rgb(0, 0, 0);" href="index.html"><h2>TicTacToe Game</h2></a> -->
                     <h2>Complex Number Calculator</h2>
-                    <img src="images/Calculator.png" width="400" height="300" alt="">   
+                    <img src="images/Calculator.png" width="400" height="300" alt="" style="padding-left: 50px; padding-right: 50; display: block; border: none;">   
                     <p style="font-size: 16px; text-align: left;">I worked in a group of five people using the Agile developmental process to create this complex number calculator over the span of six weeks. We followed a product owner’s specifications and presented our iterations every two weeks. The calculator can do regular math, complex number math, has a history pane, and has a complex number calculator that shows the left operand, right operand, and the evaluation of the equation.</p>
                 </div>
             </div>
@@ -163,7 +169,8 @@
                     box to be a hyperlink, I can just wrap the dive with class box in this style format -->
                     <!-- <a style="text-decoration:none; color:rgb(0, 0, 0);" href="index.html"><h2>TicTacToe Game</h2></a> -->
                     <h2>Spreadsheet</h2>
-                    <img src="images/SpreadSheet.png" width="400" height="150" alt="">   
+                    <img src="images/SpreadSheet.png" width="500" height="200" alt="" style="padding-top: 40px; padding-bottom: 40px;">
+                    <!-- <img src="images/SpreadSheet.png" width="400" height="150" alt="">    -->
                     <p style="font-size: 16px; text-align: left;">This was made using Ruby and is a small sized spreadsheet that accepts a variety of types such as Integers, Floats, Strings, Cell References, and Booleans. The spreadsheet uses Ruby Curses for the TUI and has 3 windows, one for the spreadsheet itself, one for entering formulas, and one for showing a cell’s value or an error message since the cell itself may be too small to show the full message/value. For the formula window, the user is able to assign values to variables, use the variables, create conditional if statements, and create for-each loops.</p>
                 </div>
             </div>
