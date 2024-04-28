@@ -33,7 +33,7 @@
         margin: 0px;
         padding: 0px;
         /* Size properties */
-        padding-top: 5px;
+        /* padding-top: 5px; */
         /* Font properties */
         color: #FFFFFF;
         font-size: 80%;
@@ -57,10 +57,12 @@
         margin-left: 12px;
         padding-left: 12px;
         padding-right: 12px;
+        padding-top: 5px;
+        padding-bottom: 5px;
         /* Display it as a block */
         display: inline-block;
         /* Height of the link */
-        height: 30px;
+        /* height: 50px; */
         line-height: 30px;
         /* No underline */
         text-decoration: none;
@@ -91,7 +93,7 @@
 </style>
 
 <div id="ovoMenu" >
-    <a href="homepage.html" style="color:rgb(151, 244, 231);">Projects</a>
+    <a href="homepage.html" style="color:rgb(151, 244, 231); font-size: 20px;">Projects</a>
 </div>
 
 <!DOCTYPE html>
@@ -132,6 +134,19 @@
             text-align: left;
             }
 
+            .grid-item2 {
+            background-color: #2196F3;
+            /* border: 10px solid rgba(0, 0, 0, 0.8); the border between the cells on the page */
+            border: 10px solid #2196F3;
+            border-radius: 30px;
+            /* height: 100%; */
+            padding: 5px;
+            font-size: 15px;
+            text-align: left;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
             .wrapper {
             display: flex;
             justify-content: space-around;
@@ -142,34 +157,107 @@
             text-align: left;
             display: flex;
             flex-direction: column;
-            /* align-items: left; */
             padding: 50px;
-            /* border: 1px dashed red; */
+            }
+
+            .box2 {
+            flex: 0 0 40%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            }
+
+            .box3 {
+              background-color: rgba(255, 255, 255, 0.8);
+            flex: 0 0 40%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            padding: 0px;
+            padding-left: 15px;
+            padding-bottom: 15px;
+            border-radius: 30px;
+            height: 50px;
             }
 
             h1 {
                 margin-top: -10px;
             }
+
             h2 {
                 margin-top: 10px;
                 margin-bottom: 10px;
                 margin-left: 10px;
             }
+            
             h3 {
                 margin-bottom: 0px;
                 margin-top: 0px;
             }
 
+            .Parent { 
+                display: flex; 
+                flex-direction: row; 
+            } 
+      
+            .child1 { 
+                width: 20%; 
+            } 
+      
+            .child2 { 
+                width: 80%; 
+                text-align: left; 
+            } 
         </style>
     </head>
 
     <body>
         <div class="grid-container">
           <div class="grid-item">
-            <div class="box">
+            <div class="box2">
+              <p>
+                <!-- <img src="C:\Users\Justin\Pictures\Screenshots\cs280Portfolio\Cropped\h.png" width="200" height="200" alt="" style="display: block; border: none; padding-bottom: 15px;">   
+                I dont even know! -->
+                <div class="Parent"> 
+                  <div class="child1"> 
+                      <img src="images/headshot.png" width="200" height="200" alt="" style="display: block; border: none; padding-bottom: 15px;">    
+                  </div> 
+                  <div class="child2"> 
+                      <h2 style="padding-bottom: 30px;">Hey there! My name is Justin Lacombe and I am currently a junior majoring 
+                        in Computer Science at James Madison University. As a Computer Science major, I find it exciting to solve 
+                        problems I've never seen before and due to my curiosity, I am always determined to find an answer. 
+                        Furthermore, I have an interest in Cybersecurity/Information Security and am in the JMU Cyber Defense Club.
+                      </h2>
+
+                      <h2>
+                        Outside of my Computer Science studies, I have taken up many hobbies. Since I really enjoy learning
+                        new skills, over the past few years I have picked up hobbies like yoyoing, balisong flipping, penspinning,
+                        and others! Along with that, I have a great adoration for nature and could never pass up the oppurtunity to go on a
+                        good hike, bike ride, or even short walk outside.
+                      </h2> 
+                  </div> 
+              </div>
+              </p>
               <!--  put personal statement here  -->
             </div>
+
           </div>
+          <div class="grid-item2" style="width: 75%;">
+            <div class="box3" style="height: 20px; border-radius: 30px;">
+            </div>
+          </div>
+          <div class="grid-item2" style="width: 50%;">
+            <div class="box3" style="height: 20px; border-radius: 30px;">
+            </div>
+          </div>
+          <div class="grid-item2" style="width: 25%;">
+            <div class="box3" style="height: 20px; border-radius: 30px;">
+            </div>
+          </div>
+
             <div class="grid-item">
                 <div class="box">
                       <!DOCTYPE html>
@@ -192,7 +280,7 @@
                       
                         <!-- <h3>James Madison University, Harrisonburg, VA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Graduation: May 2025</h3>                                   -->
                         <h3>James Madison University, Harrisonburg, VA --- May 2025</h3>                                  
-                        <p>Bachelor of Science; Major: Computer Science  
+                        <p>Bachelor of Science; Major: Computer Science</p>  
                         <p>4x Dean’s List, 1x President’s list</p>
                         <h3>Relevant Courses:</h3>
                         <ul>
